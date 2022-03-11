@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div.formSecWrapper{
+    background-image: url('../img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.formSecWrapper div.containerFormSec{
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 15px;
+    color: white;
+    padding: 25px;
+    border-left: 7px solid orangered;
+    border-right: 7px solid orangered;
+}
+
+div.containerFormSec h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid orangered;
+    font-family: sans-serif;
+}
+
+div.containerFormSec label{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+
+div.containerFormSec input#username{
+    margin-bottom: 15px;
+}
+div.containerFormSec input#pass{
+    margin-bottom: 15px;
+}
+
+div.containerFormSec input.inputForm{
+    display: block;
+    width: -webkit-fill-available;
+    padding: 0.330rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    margin-top: 9px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    padding-left: 0px;
+}
+
+
+input#submitForm{
+    padding: 9px 30px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 0.4rem;
+}
+
+input#submitForm:active{
+    background-color: green;
+}
+
+div.containerFormSec p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+div.containerFormSec p:last-child{
+    margin-bottom: 0px;
+}
+
+div.containerFormSec p a{
+    color: orangered;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+div.containerFormSec p:hover a{
+    text-decoration: underline;
+}
+
+
+/* modal design */
+
+div.mainalertModal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;bottom: 0;
+    left: 0;right: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.mainalertModal.active{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+div.alertModalContent{
+    width: 330px;
+    padding: 25px 20px;
+    background-color: #fff;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border-left: 6px solid orangered;
+    border-right: 6px solid orangered;
+    transition: all 0.4s;
+    transform: translateY(-200px);
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.alertModalContent.active{
+    transform: translateY(0px);
+    pointer-events: auto;
+    opacity: 1;
+}
+
+div.modalHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+div.modalHeader h2{
+    font-size: 27px;
+}
+
+div.modalHeader a#cross{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #dfdfdf;
+    border-radius: 50%;
+    color: black;
+}
+
+div.modalHeader a#cross i{
+    padding: 7px 0px;
+}
+
+
+
+div.mainalertModal2{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;bottom: 0;
+    left: 0;right: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.mainalertModal2.active{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+div.alertModalContent2{
+    width: 330px;
+    padding: 25px 20px;
+    background-color: #fff;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border-left: 6px solid orangered;
+    border-right: 6px solid orangered;
+    transition: all 0.4s;
+    transform: translateY(-200px);
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.alertModalContent2.active{
+    transform: translateY(0px);
+    pointer-events: auto;
+    opacity: 1;
+}
+
+div.modalHeader2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+div.modalHeader2 h2{
+    font-size: 27px;
+}
+
+div.modalHeader2 a#cross2{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #dfdfdf;
+    border-radius: 50%;
+    color: black;
+}
+
+div.modalHeader2 a#cross2 i{
+    padding: 7px 0px;
+}
+
+/* confirmation modal */
+
+div.mainalertModal3{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;bottom: 0;
+    left: 0;right: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.mainalertModal3.active{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+div.alertModalContent3{
+    width: 330px;
+    padding: 25px 20px;
+    background-color: #fff;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border-left: 6px solid orangered;
+    border-right: 6px solid orangered;
+    transition: all 0.4s;
+    transform: translateY(-200px);
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.alertModalContent3.active{
+    transform: translateY(0px);
+    pointer-events: auto;
+    opacity: 1;
+}
+
+div.modalHeader3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+div.modalHeader3 h2{
+    font-size: 27px;
+}
+
+div.modalHeader3 a#cross3{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #dfdfdf;
+    border-radius: 50%;
+    color: black;
+}
+
+div.modalHeader3 a#cross3 i{
+    padding: 7px 0px;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    
+
+
+
+    <div class="formSecWrapper">
+        <div class="containerFormSec">
+            <h2>Login Account</h2>
+            <label for="username">Email or Username</label>
+            <input class="inputForm" id="username" type="text" placeholder="Email or Username">
+            <p id="userRes" style="height: 10px;text-align: left;font-weight: bold;"></p>
+            <br>
+            <label for="pass">Password</label>
+            <input class="inputForm" id="pass" type="password" placeholder="Password">
+            <p id="passRes" style="height: 10px;text-align: left;font-weight: bold;"></p>
+            <br>
+
+            <input id="submitForm" type="submit" value="LOGIN">
+
+            <p><a href="#">Lost your password?</a></p>
+            <p><a href="#">Create a account</a></p>
+        </div>
+    </div>
+
+
+    <div class="mainalertModal">
+        <div class="alertModalContent">
+            <div class="modalHeader">
+                <h2>Alert Message</h2>
+                <a href="#" id="cross"><i class="fas fa-times"></i></a>
+            </div>
+
+            <div class="modalBody">
+                <h3>Please, fill-up the form.</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mainalertModal2">
+        <div class="alertModalContent2">
+            <div class="modalHeader2">
+                <h2>Alert Message</h2>
+                <a href="#" id="cross2"><i class="fas fa-times"></i></a>
+            </div>
+
+            <div class="modalBody2">
+                <h3>Please, input valid text.</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainalertModal3">
+        <div class="alertModalContent3">
+            <div class="modalHeader3">
+                <h2>Confirmation Message</h2>
+                <a href="#" id="cross3"><i class="fas fa-times"></i></a>
+            </div>
+
+            <div class="modalBody3">
+                <h3>Well done!</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
